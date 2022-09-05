@@ -120,7 +120,7 @@ public class PlayerMoverment : MonoBehaviour
     {
         // Start run animation if inputHorizontal != 0
         animator.SetBool("isRunning", characterState.InputHorizontal != 0);
-        //
+        // Start jump animation when character off the ground
         animator.SetBool("isGrounded", characterState.IsGrounded);
     }
 
